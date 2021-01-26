@@ -54,8 +54,8 @@ df_map = pd.DataFrame(
 st.map(df_map)
 
 ## 画像の表示
-img = Image.open("McConomy.jpg")
-st.image(img, caption="McConomy Curve", use_column_width=True)
+img = Image.open("test.jpg")
+st.image(img, caption="Test Image", use_column_width=True)
 
 
 ## チェックボックスの表示
@@ -78,7 +78,7 @@ text = st.text_input("あなたの趣味を教えてください。")
 condition = st.slider("あなたの今の調子は？", 0, 100, 50)
 "コンディション：", condition
 
-##サイドバーの追加
+## サイドバーの追加
 st.sidebar.write("サイドバーです")
 text2 = st.sidebar.text_input("あなたの趣味を教えてください。２")
 condition2 = st.sidebar.slider("あなたの今の調子は？２", 0, 100, 50)
@@ -115,7 +115,3 @@ for i in range(100):
     bar.progress(i+1)
     time.sleep(0.1)
 "Done"
-
-
-
-
